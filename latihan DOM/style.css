@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#satu {
+  width: 80%;
+  height: 350px;
+  padding: 15px;
+  margin: auto;
+}
+#satu #paragraf {
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+}
+#dua {
+  text-align: center;
+}

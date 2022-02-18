@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events</title>
+    <style>
+      * {
+        border: 2px solid #dedede;
+        padding: 15px;
+        margin: 15px;
+      }
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        max-width: 600px;
+        margin: 30px auto;
+        font-family: sans-serif;
+        color: #333;
+      }
+      /* .p1:active {
+        background-color: blueviolet;
+        color: #dedede;
+      } */
+    </style>
+  </head>
+  <body>
+    <!--
+          Events != Even
+          Events pada JS merepresentasikan sebuah kejadian yg terjadi di dalam DOM
+
+          .........kejadian tsb bisa dilakukan oleh user ?
+          ataupun dilakukan secara otomatis oleh API
+        
+
+
+
+         dua cara mendegarkan/menggunakan event pd DOM
+         1. Event Handler
+          - inline HTML attrubut = tidak direkomendasikan
+          - Element method
+         2. addEventListener()     
+         
+         
+         Daftar Event :
+           - Mouse Event  
+              * click
+              * dblclick
+              * mouseover
+              * mouseenter
+              * mouseup
+              * whell
+           - Keyboard Event 
+              * keydown
+              * keypress
+              * keyup 
+           - Resources Event
+              * resize
+              * scroll
+           - Focus Event
+           - View Event
+           - Form Event
+              * reset
+              * submit
+           - CSS Animation & transition Event
+           - Drag & Drop event
+           - Dan lain-lain
+
+ -->
+         
+        
+    <h1 id="judul">Hello World!</h1>
+    <div id="continer">
+      <section id="a">
+        <p class="p1">paragraf 1</p>
+        <p class="p2">paragraf 2</p>
+        <p class="p3">paragraf 3</p>
+        <p class="p4">paragraf 4</p>
+      </section>
+      <section id="b">
+        <button id="item">buat item baru</button>
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+      </section>
+    </div>
+    <script src="myscript.js"></script>
+  </body>
+</html>

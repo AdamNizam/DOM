@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Tree</title>
+  </head>
+  <body>
+    <!--
+            DOM = Document Object Model 
+            Definisi 
+            " DOM adalah antarmuka pemrograman untuk HTML yang merepresentasikan halaman web, sehingga program
+              dapat mengubah dan memanipulasi strukturnya"  = MOZILLA
+
+            " reprentasi elemen HTML pada dokumen menjadi sebuah object" = WPU
+
+             karateristik DOM =  :
+            1.antarmuka pemrograman berbasis object yang merepresentasikan dokumen web
+            2.DOM
+             membuat seluruh komponen dari halaman web dapat diakses & dimanipulasi 
+            3.komponen 
+              - Elemen HTML
+              - Atribut
+              - text
+              - DLL
+            4.DOM dapat memanipulasi (dibuat , dihapus, diubah) menggunakan javascript
+
+        DOM Tree = pohon hirarki adalah reprentasi elemen2 HTML yang ada di dalam Browser
+        Tipe-tipe Node :            
+            -Elemen
+            -Attribut
+            -Text
+            -CData Section
+            -Entity
+            -Processing Instruction
+            -Comment
+            -Document
+            -Document type
+            -Document Fragment
+            -Notation
+
+        dua istilah dalam DOM :
+            1. Nodelist = kumpulan node yang type berbeda
+            2. HTMLCollection = kumpulan node yang type sama (khusus element HTML)
+          - keduanya merupakan kumpulan node
+          - strukturnya datanya mirip dengan array
+          - nodelist dapat berisi node apapun , sedangkan HTMLCollection harus berisi elemen HTML
+          -HTMLCollection bersifat live sedangkan nodelist tidak
+
+        Struktur Hierarki DOM Tree :
+          1. Root Node
+            - node yang menjadi sumber / akar dari semua node lainya di dalam DOM tree
+            - yang secara default adalah document
+          2. Parent Node 
+            - node yang berada di atas 1 tingkat dari node yang lain
+            - secara default body HTML
+          3. Child Node
+             - node yang berada  dibawah 1 tingkat dari node yang lain
+             Example  : <H1> adalah child dari <body>
+
+
+
+            
+        -->
+
+    <h1>Hello, World!</h1>
+    <p>paragraf 1</p>
+    <p>paragraf 2</p>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+body {
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 990px;
+  margin: auto;
+}
+
+.card {
+  width: 500px;
+  padding: 0 80px;
+  height: 80px;
+  font-size: 16px;
+  line-height: 80px;
+  border-radius: 40px;
+  backdrop-filter: blur(12px);
+  background: rgb(202, 202, 209, 0.5);
+  margin: 20px auto;
+  position: relative;
+  text-align: center;
+}
+.card img {
+  float: left;
+  margin: 0px 15px 5px -80px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: relative;
+  background-color: cadetblue;
+}
+.card .nama,
+.card .telp,
+.card .email {
+  display: block;
+  line-height: 22px;
+  padding: 0 5px;
+}
+.card .nama {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: aliceblue;
+}
+.card .telp {
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: rgb(88, 75, 75);
+}
+.card .email {
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #999;
+  font-family: cursive;
+  font-weight: bold;
+}
+.card .close {
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  color: rgb(247, 226, 226);
+  top: 0;
+  right: 30px;
+  cursor: pointer;
+}
+.card:hover .close {
+  color: red;
+}
+.card a {
+  text-decoration: none;
+}
+.bubbles {
+  position: absolute;
+  bottom: -100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.bubbles span {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 20px rgba(10, 1, 1, 0.1);
+  backdrop-filter: blur(5px);
+  animation: move 10s linear infinite;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes move {
+  100% {
+    transform: translateY(-90vh);
+  }
+}
+.bubbles span.one {
+  animation-delay: 2.2s;
+  transform: scale(2.15);
+}
+.bubbles span.two {
+  animation-delay: 3.5s;
+  transform: scale(1.55);
+}
+.bubbles span.three {
+  animation-delay: 0.2s;
+  transform: scale(0.35);
+}
+.bubbles span.four {
+  animation-delay: 6s;
+  transform: scale(2.15);
+}
+.bubbles span.five {
+  animation-delay: 7s;
+  transform: scale(0.5);
+}
+.bubbles span.six {
+  animation-delay: 4s;
+  transform: scale(2.5);
+}
+.bubbles span.seven {
+  animation-delay: 3s;
+  transform: scale(1.5);
+}
+.bubbles span:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 40%;
+  transform: skew(45deg) translateX(150px);
+  background: rgba(255, 255, 255, 0.15);
+  animation: mirror 2.5s linear infinite;
+}
+@keyframes mirror {
+  100% {
+    transform: translateX(-450px);
+  }
+}
+.bubbles span.one:before {
+  animation-delay: 1.5s;
+}
+.bubbles span.two:before {
+  animation-delay: 3.5s;
+}
+.bubbles span.three:before {
+  animation-delay: 2.5s;
+}
+.bubbles span.four:before {
+  animation-delay: 7.5s;
+}
+.bubbles span.five:before {
+  animation-delay: 4.5s;
+}
+.bubbles span.six:before {
+  animation-delay: 0.5s;
+}
+.bubbles span.seven:before {
+  animation-delay: 6s;
+}

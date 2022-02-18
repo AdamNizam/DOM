@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        text-align: center;
+      }
+      button {
+        padding: 8px;
+        margin: 10px;
+        box-shadow: 5px 5px 5px rgb(75, 67, 67);
+      }
+      .bg {
+        background: linear-gradient(450deg, rgb(209, 104, 160), rgb(102, 19, 180));
+      }
+      .kotak {
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+        color: aliceblue;
+        line-height: 50px;
+      }
+      .merah {
+        background-color: red;
+      }
+      .hijau {
+        background-color: green;
+      }
+      .biru {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>bermain dengan warna</h1>
+    <button id="button" type="button">Ubah Backgorund</button>
+    <br /><br />
+    <div class="kotak merah">Red</div>
+    <input type="range" name="siliderMerah" min="1" max="255" />
+    <div class="kotak hijau">Green</div>
+    <input type="range" name="siliderHijau" min="1" max="255" />
+    <div class="kotak biru">Blue</div>
+    <input type="range" name="siliderBiru" min="1" max="255" />
+    <script src="script.js"></script>
+  </body>
+</html>
